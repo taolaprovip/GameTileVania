@@ -1845,21 +1845,11 @@ CompositeCollider2D:
         Y: 10000041
       - X: 70000041
         Y: 10000100
-      - X: 59999959
+      - X: 49999959
         Y: 10000100
-      - X: 59999900
+      - X: 49999900
         Y: 10000041
-      - X: 59999900
-        Y: 10000000
-      - X: 50000000
-        Y: 10000000
-      - X: 50000000
-        Y: -20000000
-      - X: 40000100
-        Y: -20000000
-      - X: 40000100
-        Y: -19999959
-      - X: 40000041
+      - X: 49999900
         Y: -19999900
       - X: 29999959
         Y: -19999900
@@ -1922,8 +1912,8 @@ CompositeCollider2D:
     - - {x: -8.00001, y: -4.9999747}
       - {x: 8, y: -4.999971}
       - {x: 7.9999704, y: 1}
-      - {x: 5, y: 0.99997073}
-      - {x: 4.9999704, y: -2}
+      - {x: 4.99999, y: 0.9999748}
+      - {x: 4.999961, y: -1.99999}
       - {x: 1.00001, y: -1.9999607}
       - {x: 0.9999748, y: 0.00001}
       - {x: 0.00001, y: 0.0000394}
@@ -7447,6 +7437,18 @@ PrefabInstance:
     - target: {fileID: 559544189432440646, guid: 03a81cb5a0b83d74cba6779d68f6527e, type: 3}
       propertyPath: m_Name
       value: Ginger (Player)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5623959111220081405, guid: 03a81cb5a0b83d74cba6779d68f6527e, type: 3}
+      propertyPath: jumpSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987328839990031362, guid: 03a81cb5a0b83d74cba6779d68f6527e, type: 3}
+      propertyPath: m_GravityScale
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987328839990031362, guid: 03a81cb5a0b83d74cba6779d68f6527e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03a81cb5a0b83d74cba6779d68f6527e, type: 3}
