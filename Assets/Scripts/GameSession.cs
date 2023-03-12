@@ -12,10 +12,15 @@ public class GameSession : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
-    
+    LevelManager levelManager;
+    public int GetScore()
+    {
+        return score;
+    }
     void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
+        levelManager = FindObjectOfType<LevelManager>();
         if (numGameSessions > 1)
         {
             Destroy(gameObject);
@@ -62,6 +67,11 @@ public class GameSession : MonoBehaviour
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
+        levelManager.LoadGameOver();
         Destroy(gameObject);
+        
+
+        
+        
     }
 }
